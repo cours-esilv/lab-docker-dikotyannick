@@ -1,0 +1,5 @@
+# Stop the existing container (if running)
+docker stop thirsty_villani
+
+# Start the container with the environment variable set to "development" and open ports
+docker run -p 8080:8080 -p 5000:5000 -e environment=development my-python-app
